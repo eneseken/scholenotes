@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="content1.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Enes Eken - Cisco Packet Tracer ile IoT bağlantıları</title>
+    <link rel="icon" href="fa fa-calendar">
+</head>
+<body>
+
+     <!--Nav bar-->
+    <nav>
+        <label class="information">
+        <a href="index.html" ><img class="image" src="https://avatars.githubusercontent.com/u/83923806?v=4" width="50px" height="50px" alt=""></a>
+        <h1 class="logo">Enes Eken</h1>
+        <p class="developer">Developer</p>
+        </label>
+        
+        <ul class="nav-bar">
+            <li><a  href="index.html">Anasayfa</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li></li>
+            <label class="mode-control">
+                <input class="button" id="mode-btn" type="checkbox">
+                <span><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/42/42146.png" alt=""></span>
+                <span><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/73/73737.png" alt=""></span>
+            </label>
+        </ul>
+    </nav>
+
+    <div class="title-info">
+        <h1 class="title">Cisco Packet Tracer ile IoT bağlantıları</h1>
+        <hr>
+    </div>
+    
+    <section class="content">
+        <p class="enter-info">Eğer IoT bileşenlerini kurarken hata alıyorsan bu yazımı mutlaka okumalısın</p>
+        <p>İlk Öncelikle kullanacağımız <strong>IoT</strong> bileşenlerini tanıyalım ;</p>
+        <img class="example-image" src="cisco-iot-ss kopya.png" width="720px" height="470px" alt="">
+        <p class="second-info">Cihazları tanıdığına göre bu adımları sırasıyla takip et</p>
+        <ul>
+            <li>1- IoT Cihazlarını Koy.</li>
+            <li>2- IoT Cihazlarını İsimlendir.</li> 
+            <li>3- IoT Cihazlarının Config > Wireless0 > SSID kısmına <code class="code">HomeGateway</code> gir.</li> 
+            <li>4- (IoT Cihazları) Config > Settings > IoT Server > HomeGateway</li> 
+            <li>5- IoT Cihazlarını Advanced > I/O Config > Network Adapter > <code class="code">PT-IOT-NM-1W</code> olarak ayarla.</li> 
+            <li>6- Eğer IoT Cihazlarının Advanced > I/O Config > Programing kısmında <code class="code">Starting Appliance (JavaScript)...</code> yazmıyorsa <a class="link" target="_blank" href="https://community.cisco.com/t5/cisco-software-discussions/packet-tracer-no-remote-api/td-p/3959413">buraya</a> tıkla</li> 
+            <li>7- HomeGateway cihazını koy. (Iot Cihazları arasındaki bağlantıyı gör)</li>
+            <li>8- Uzaktan erişim sağlamak için bir cihaz koy. (Laptop/Telefon)</li>
+            <li>9- Cihazın Config > Wireless0 > SSID kısmına <code class="code">HomeGateway</code> yaz.</li>
+            <li>10- Cihazın Desktop > IoT Monitor kısmından Iot Cihazlarını kontrol et. </li>
+        </ul>
+        <div class="blog-date-footer">
+            <i id="calendar-icon" class="fa fa-calendar-check" aria-hidden="true"></i>
+            <time class="blog-date">21 Ekim 2022, Cuma</time>
+        </div>
+    </section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

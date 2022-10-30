@@ -1,0 +1,47 @@
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 900px;
+    margin-top: 30px;
+    margin-left: 145px;
+}
+.social-links .github , .twitter ,.youtube, .codepen{
+    width: 500px;
+    height: 50px;
+    border-radius: 3px;
+    padding: 14px 10px;
+    align-items: center;
+    font-size: 15px;
+}
+.social-links .nickname{
+    position: relative;
+    bottom: 5px;
+}
+.social-links #follower {
+    padding: 4px 10px;
+    float: right;
+    color:#ffffff;
+    border-radius: 20px;
+    font-size: 15px;
+    position: relative;
+    bottom: 3px;
+
+}
+
+.social-links .follower-twitter{ background-color: #1da1f2;}
+.social-links .follower-github{ background-color: #333333;}
+.social-links .follower-youtube{ background-color: #ff0000;}
+.social-links .follower-codepen{ background-color: #333333;}
+
+.social-links .github{ background-color: #e5e5e5; }
+.social-links .twitter{ background-color: #d4edfd;}
+.social-links .youtube{ background-color: #ffcfcf;}
+.social-links .codepen{ background-color: #e5e5e5;}
+
+body.dark .social-links .github{ background-color: #1e1f21; }
+body.dark .social-links .twitter{ background-color: #2a4456;}
+body.dark .social-links .youtube{ background-color: #552628;}
+body.dark .social-links .codepen{ background-color: #1e1f2159;}

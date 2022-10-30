@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body.dark{
+    background-color: #333;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+label.logo{
+    color: #333;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 150px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #555555;
+    font-size: 15px;
+    padding: 0px 5px;
+    border-bottom-color: #55555515;
+    transition: 1s all;
+}
+.nav-bar a.active,a:hover{
+    border-bottom: 1px solid #555555;
+    border-radius: 3;
+    color: #333333;
+}
+.mode-control{
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+}
+.mode-control input{
+    position: absolute;
+    opacity: 0;
+}
+.mode-control  span:nth-of-type(2){
+    display: none;
+}
+.mode-control input:checked + span{
+    display: none;
+}
+.mode-control input:checked + span + span{
+    display:inline-block;
+}
+.mode-control span{
+    display: inline-block;
+    background-color: #fff;
+}
+body.dark .mode-control span{
+    background-color: #fff;
+}
+.developer{
+    position: absolute;
+    left: 100px;
+    top: 45px;
+    color: #888888;
+    font-size: 13px;
+}
+.image{
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    transition: .3s all;
+}
+.image:hover{
+    box-shadow: 0px 0px 4px black;
+}
+.hosgeldin{
+    font-size: 24px;
+    font-weight: 700;
+}
+.welcome-section{
+    border-radius: 10px;
+    width: 900px;
+    height: 178px;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #eeeeee;
+}
+body.dark .welcome-section{
+    background-color: #1e1f21;
+}
+.caption{
+    padding-top: 20px;
+}
+.information{
+    position: relative;
+    left: 130px;
+}
+.logo{
+    color: #333;
+    font-size: 17px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+@media (max-width:700px) {
+    .information{display: none;}
+    nav ul li{
+        line-height: 80px;
+    }
+}
+::-webkit-scrollbar{
+    background-color: #1e1f21;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #777777;
+    border-radius: 20px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}

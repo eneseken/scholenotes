@@ -1,0 +1,84 @@
+.title-info{
+    position: relative;
+    top: 50px;
+}
+.title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+hr{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    opacity: .5;
+    top: 10px;
+}
+.enter-info{
+    line-height: 40px;
+}
+.second-info{
+    line-height: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+.content{
+    position: relative;
+    height: 200vh;
+    width: 50%;
+    left: 360px;
+    top: 60px;
+}
+.example-image{
+    position: relative;
+    top: 10px;
+    background-color: #2e2f31;
+    border-radius: 6px;
+}
+body.dark .example-image{
+    background-color: #1e1f21;
+}
+.list{
+    position: relative;
+    left: 55%;
+    bottom: 75%;
+}
+.code{
+    background-color: #eff1f3;
+    padding: 3px;
+    border-radius: 6px;
+}
+body.dark .code{
+background-color: #484b4e;
+}
+.content ul li{
+    line-height: 40px;
+}
+.link{
+    color: rgb(4, 96, 201);
+}
+body.dark .link:hover{
+    color: wheat;
+}
+.blog-date-footer{
+    display: flex;
+    border-radius: 5px;
+    background-color: #f9dfdb;
+    border: 1px solid #dd553f;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+}
+body.dark .blog-date-footer{
+    background-color: #4f3634;
+    border-color:  #dd553f;
+}
+.blog-date{
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    left: 10px;
+}
+#calendar-icon{
+    font-size: 14px;
+}

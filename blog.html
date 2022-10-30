@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>School Notes</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <nav>
+        <label class="information">
+        <a href="index.html" ><img class="image" src="https://avatars.githubusercontent.com/u/83923806?v=4" width="50px" height="50px" alt=""></a>
+        <h1 class="logo">Enes Eken</h1>
+        <p class="developer">Developer</p>
+        </label>
+        
+        <ul class="nav-bar">
+            <li><a  href="index.html">Anasayfa</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li></li>
+            <label class="mode-control">
+                <input class="button" id="mode-btn" type="checkbox">
+                <span><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/42/42146.png" alt=""></span>
+                <span><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/73/73737.png" alt=""></span>
+            </label>
+        </ul>
+    </nav>
+    
+    <div class="blog-header">
+        <h1 class="blog-text">Blog</h1>
+        <input class="search-btn" type="text" id="myInput" onkeyup="myFunction()" placeholder="Ara">
+        <button class="filter-date"><i id="decrease-icon" class="fa fa-angle-down" aria-hidden="true"></i>  Tarihe Göre Sırala</button>
+    </div>
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item " data-filter="iot">IoT</span>
+        <span class="filter-item " data-filter="ns">Network Systems</span>
+        <span class="filter-item " data-filter="ss">Server Systems</span>
+    </div>
+    
+
+
+    <div class="band">
+
+        <div  class="itemBox iot">
+            <a href="content1.html" class="card">
+                <article>
+                <h6 class="date">21 Oct 2022</h6>
+                <h6 class="tag-ıot">IoT</h6>
+                <div >Cisco Packet Tracer ile IoT bağlantıları</div>
+                </article>
+            </a>
+        </div>
+
+        <div  class="itemBox ns">
+              <a href="content2.html" class="card">
+                  <article>
+                  <h6 class="date">22 Oct 2022</h6>
+                  <h6 class="tag-ns">Network Systems</h6>
+                  <div >Cisco Packet Tracer ile SMTP ve FTP uygulaması</div>
+                  </article>
+              </a>
+        </div>
+
+        <div  class="itemBox other">
+                <a href="dersprogramı.html" class="card">
+                    <article>
+                    <h6 class="date">23 Oct 2022</h6>
+                    <h6 class="tag-ıot">Other</h6>
+                    <div>Ders Programı</div>
+                    </article>
+                </a>
+          </div>
+
+    </div>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.filter-item').click(function(){ 
+    const value = $(this).attr('data-filter');
+    if(value == 'all'){
+      $('.itemBox').show('1000');
+    }
+    else{
+      $('.itemBox').not('.'+value).hide('1000');
+      $('.itemBox').filter('.'+value).show('1000');
+    }
+  })
+  $('.filter-item').click(function(){
+    $(this).addClass('active-filter').siblings().removeClass('active-filter');
+  })
+})
+</script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

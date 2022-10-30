@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMP 11/Y Bilişim Ders Programı</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dersprog.css">
+</head>
+<body>
+    <canvas id="Matrix"></canvas>
+    <table id="table" class="tablo" border="1">
+        <thead >
+        <th>(1)</th>
+        <th>(2)</th>
+        <th>(3)</th>
+        <th>(4)</th>
+        <th>(5)</th>
+        <th>(6)</th>
+        <th>(7)</th>
+        <th>(8)</th>
+        <th>(9)</th>
+        <th>(10)</th>
+        <th>(11)</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+            <td>08:30-9:10</td><td>09:20-10:00</td><td>10:10-10:50</td><td>11:00-11:40</td><td>11:50-12:30</td><td>13:30-14:10</td><td>14:20-15:00</td><td>15:10-15:50</td><td>16:00-16:40</td>
+            <td>16:50-17:30</td><td>17:40-18:20</td>
+            </tr>
+            <tr>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K. ">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Ağ Sistemleri Ve Yönlendirme | Atölye | Alper K.">ASVEYÖN</td>
+                <td title="Seçmeli Programlama | Atölye | Alper K.">SEÇPROG</td>
+                <td title="Seçmeli Programlama | Atölye | Alper K.">SEÇPROG</td>
+                <td title="Seçmeli Programlama | Atölye | Alper K.">SEÇPROG</td>
+            </tr>
+            <tr>
+                <td title="Sunucu İşletim Sistemi | Atölye | Alper K. ">SUİŞSİS</td>
+                <td title="Sunucu İşletim Sistemi | Atölye | Alper K. ">SUİŞSİS</td>
+                <td title="Sunucu İşletim Sistemi | Atölye | Alper K. ">SUİŞSİS</td>
+                <td title="Sunucu İşletim Sistemi | Atölye | Alper K. ">SUİŞSİS</td>
+                <td title="Siber Güvenlik Temelleri | Atölye | Alper K. ">SİBGTEM</td>
+                <td title="Siber Güvenlik Temelleri | Atölye | Alper K. ">SİBGTEM</td>
+                <td title="Siber Güvenlik Temelleri | Atölye | Alper K. ">SİBGTEM</td>
+                <td title="Siber Güvenlik Temelleri | Atölye | Alper K. ">SİBGTEM</td>
+                <td title="Siber Güvenlik Temelleri | Atölye | Alper K. ">SİBGTEM</td>
+                <td title="Seçmeli Mesleki Yabancı Dil | Atölye | Alper K. ">SEÇMYD</td>
+                <td title="Seçmeli Mesleki Yabancı Dil | Atölye | Alper K.">SEÇMYD</td>
+            </tr>
+            <tr>
+                <td title="Nesnelerin İnterneti | Atölye | Nihan Ö. ">SEÇNİ</td>
+                <td title="Nesnelerin İnterneti | Atölye | Nihan Ö. ">SEÇNİ</td>
+                <td title="Nesnelerin İnterneti | Atölye | Nihan Ö. ">SEÇNİ</td>
+                <td title="Nesnelerin İnterneti | Atölye | Nihan Ö. ">SEÇNİ</td>
+                <td title="Felsefe | B9 | Hafize K. ">FEL</td>
+                <td title="Felsefe | B9 | Hafize K. ">FEL</td>
+                <td title="Rehberlik | B9 | Kamil A. ">REH</td>
+                <td abbr="" class="label" id="bosDers"><span class="align">-</span><span class="add-label">Boş Ders</span></td>
+                <td abbr="" class="label" id="sınavTarih"><span class="align">TRH</span><span class="add-label">26 EKİM</span></td>
+                <td abbr="" class="label" id="sınavIngilizce"><span class="align">YBD</span><span class="add-label">26 EKİM</span></td>
+            </tr>
+            <tr>
+            <td title="Yabancı Dil | B21 | R. ARAS ">YBD</td>
+            <td title="Yabancı Dil | B21 | R. ARAS ">YBD</td>
+            <td title="Türk Dili Ve Dil Bilgisi | B21 | R. UÇAR ">TDVEDB</td>
+            <td title="Türk Dili Ve Dil Bilgisi | B21 | R. UÇAR ">TDVEDB</td>
+            <td title="Beden Eğitimi | SD2 | M. İLTER">BE/GS/M</td>
+            <td title="Beden Eğitimi | SD2 | M. İLTER">BE/GS/M</td>
+            <td title="Din Kültürü Ve Ahlak Bilgisi | B21 | Y. BAŞOŞ">DKVABİL</td>
+            <td title="Din Kültürü Ve Ahlak Bilgisi | B21 | Y. BAŞOŞ">DKVABİL</td>
+            <td abbr="" class="label" id="sınavEd"><span class="align">TDVEDB</span><span class="add-label">27 EKİM</span></td>
+            </tr>
+            <tr>
+                <td title="Türk Dili Ve Dil Bilgisi | A26 | R. UÇAR ">TDVEDB</td>
+                <td title="Türk Dili Ve Dil Bilgisi | A26 | R. UÇAR ">TDVEDB</td>
+                <td title="Türk Dili Ve Dil Bilgisi | A26 | R. UÇAR ">TDVEDB</td>
+                <td title="Tarih | A26 | D. DEMİRT ">TRH</td>
+                <td title="Tarih | A26 | D. DEMİRT ">TRH</td>
+            </tr>
+            <tr>
+                <td class="sa"><button class="custom-btn btn-5"onclick="kitaplar()"><span>Kitaplar</span></button></td>
+                <td class="sa"><button class="custom-btn btn-5" onclick="handleEvent()"><span>Sınav Tarihleri</span></button></td>
+            </tr>
+            <tr id="kitaplar">
+                <td>
+                    <a target="_blank" href="/kitaplar/Mesleki_Yabanci_Dil_Bilisim_11-12_3.pdf">SEÇMYD</a> <br>
+                    <a target="_blank" href="/kitaplar/Nesnelerin_Interneti_11_3.pdf">SEÇNİ</a> <br>
+                    <a target="_blank" href="/kitaplar/Programlama_Ortak.pdf">SEÇPROG</a> <br>
+                    <a target="_blank" href="/kitaplar/Siber_Guvenlik_Temelleri_11_3.pdf">SİBGTEM</a> <br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+ 
+    <script src="dersprog.js"></script>
+</body>
+</html>
